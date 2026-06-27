@@ -77,3 +77,8 @@ Total Returns = COUNT(ReturnQuantity)
 - Data Modeling (6 related tables)
 
 ## ⚙️ DAX Measures
+Total Revenue = SUMX(Sales, Quantity * LOOKUPVALUE(Price))
+Total Orders = DISTINCTCOUNT(OrderNumber)
+Total Profit = Revenue - Cost
+Profit Margin % = DIVIDE(Profit, Revenue)
+Total Returns = COUNT(ReturnQuantity)
